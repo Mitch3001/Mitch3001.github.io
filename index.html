@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корху Михаил | System Administrator</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --text: #334155;
+            --accent: #10b981;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--light);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-bottom: 4px solid var(--primary);
+            margin-bottom: 30px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary);
+            margin-bottom: 15px;
+        }
+        h1 { margin: 10px 0; color: var(--dark); }
+        .role { color: var(--primary); font-weight: bold; font-size: 1.2em; }
+        .contacts a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--dark);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .skill-box {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+        .skill-box h3 { margin: 0 0 10px 0; font-size: 1em; color: var(--dark); }
+        .skill-box ul { margin: 0; padding-left: 20px; font-size: 0.9em; }
+        .project {
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .ai-section {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border: 2px solid var(--primary);
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 5px;
+        }
+        .btn:hover { background: var(--dark); }
+        footer { text-align: center; padding: 30px; color: #64748b; font-size: 0.9em; }
+        @media (max-width: 600px) {
+            .contacts { display: flex; flex-direction: column; gap: 10px; }
+            .contacts a { margin: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <!-- ВАЖНО: Фото должно называться photo.jpg и лежать в том же репозитории -->
+        <img src="photo.jpg" alt="Фото профиля" class="photo">
+        <h1>Корху Михаил</h1>
+        <p class="role">Junior System Administrator | Information Security</p>
+        <div class="contacts">
+            <span>📍 Москва</span>
+            <a href="tel:+79960906880">📞 +7 (996) 090-68-80</a>
+            <a href="https://t.me/mikle_bon">✈️ Telegram</a>
+            <a href="mailto:mihailkorhy@gmail.com">📧 Email</a>
+        </div>
+    </header>
+
+    <div class="section">
+        <h2>🎯 Цель</h2>
+        <p>Построение надежной IT-инфраструктуры с применением AI-инструментов. Ищу команду для долгосрочного сотрудничества и развития в сфере системного администрирования.</p>
+    </div>
+
+    <div class="section">
+        <h2>🛠 Технический стек</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <h3>💻 ОС & Инфраструктура</h3>
+                <ul>
+                    <li>Windows Server</li>
+                    <li>Linux / РедОС</li>
+                    <li>VirtualBox / VMware</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>🌐 Сети</h3>
+                <ul>
+                    <li>TCP/IP, DNS, DHCP</li>
+                    <li>VLAN, Routing</li>
+                    <li>Firewall</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>🗄 Базы данных</h3>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>MS SQL</li>
+                    <li>SQLite</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>🔧 Код & AI</h3>
+                <ul>
+                    <li>Python, C#, Bash</li>
+                    <li>HTML/CSS/JS</li>
+                    <li>Local LLM, Automation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section ai-section">
+        <h2>🤖 AI в работе</h2>
+        <p>Использую нейросети для ускорения рутинных задач в 3-5 раз:</p>
+        <ul>
+            <li>Генерация скриптов и конфигов (Bash/PS)</li>
+            <li>Анализ логов и поиск аномалий</li>
+            <li>Авто-документирование процессов</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🚀 Проекты</h2>
+        <div class="project">
+            <h3>Автоматизация мониторинга логов (Python + AI)</h3>
+            <p>Скрипт с интеграцией LLM для классификации ошибок. Время анализа сократилось с 2 часов до 15 минут.</p>
+        </div>
+        <div class="project">
+            <h3>Защищенный веб-сервер (РедОС)</h3>
+            <p>Настройка Nginx, SSL, Fail2Ban. Успешное прохождение сканирования уязвимостей.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🎓 Образование</h2>
+        <p><strong>Колледж "Академия инженерных технологий и управления"</strong><br>
+        Специальность: «Обеспечение информационной безопасности автоматизированных систем»<br>
+        Статус: Студент предвыпускного курса (Готов к full-time)</p>
+    </div>
+
+    <div class="section" style="text-align: center;">
+        <h2>🚀 Готов к тестовому заданию!</h2>
+        <p>Хочу принести пользу вашей инфраструктуре в первый же месяц.</p>
+        <a href="mailto:mihailkorhy@gmail.com" class="btn">Написать на Email</a>
+        <a href="https://t.me/mikle_bon" class="btn">Telegram</a>
+    </div>
+
+    <footer>
+        <p>© 2026 Корху Михаил | GitHub Pages</p>
+    </footer>
+</div>
+
+</body>
+</html>
